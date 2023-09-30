@@ -29,3 +29,6 @@ export const String = {
   },
   JSON_ERROR: "ops, essa tarefa está fora a data limite de conclusão",
 };
+export const TESTS = {
+  BUTTON: "button-test",
+};

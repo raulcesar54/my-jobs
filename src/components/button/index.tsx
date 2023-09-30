@@ -1,4 +1,5 @@
 "use client";
+import { TESTS } from "@/strings";
 import { ButtonProps } from "./props";
 
 export const Button: React.FC<ButtonProps> = (props) => {
@@ -12,6 +13,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
   };
   return (
     <button
+      data-testid={TESTS.BUTTON}
       onClick={() => onPress && onPress()}
       type={type}
       className={`w-full p-4 rounded-full transition ease-in-out duration-300 ${selectLabel[variant]}`}
