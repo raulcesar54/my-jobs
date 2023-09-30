@@ -1,11 +1,17 @@
 "use client";
 import { TitleProps } from "./props";
 import { QuoteIcon } from "@/assets/icons";
+import { motion } from "framer-motion";
 
 export const Title: React.FC<TitleProps> = (props) => {
   const { subtitle, title, strongTitle } = props;
   return (
-    <div className="max-w-[400px] gap-4">
+    <motion.div
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.2, delay: 0.4 }}
+      className="max-w-[400px] gap-4"
+    >
       <QuoteIcon />
       <div className="mt-2">
         <small className="text-text-disabled text-sm">{subtitle}</small>
@@ -16,6 +22,6 @@ export const Title: React.FC<TitleProps> = (props) => {
           )}
         </h1>
       </div>
-    </div>
+    </motion.div>
   );
 };

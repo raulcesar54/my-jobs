@@ -66,16 +66,32 @@ export const UseFileProvider: React.FC<{ children: JSX.Element }> = (props) => {
     setLastModified(new Date());
     setData((data) => [...data, prepareData]);
   };
+  const handleExportJson = async () => {
+    const fileName = "my-file";
+    const json = JSON.stringify(data, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
+    const href = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = fileName + ".json";
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+    URL.revokeObjectURL(href);
+  };
 
   return (
     <UseFileContext.Provider
       value={{
         handleOpenFile,
+        handleAddFile,
+        handleExportJson,
         data,
         name,
         lastModified,
         hasData: Boolean(data.length),
-        handleAddFile,
       }}
     >
       <input

@@ -1,8 +1,11 @@
+//#region
 "use client";
 import { PackageIcon } from "@/assets/icons";
 import { useFile } from "@/hooks/useFile";
 import { String } from "@/strings";
 import { format } from "date-fns";
+import { AnimatePresence, motion } from "framer-motion";
+//#endregion
 
 export const JsonViewer = () => {
   const { JSON_VIEWER } = String;
@@ -25,11 +28,17 @@ export const JsonViewer = () => {
         <p className="col-span-1 justify-self-center">Tempo estimado</p>
       </div>
       <div className="flex flex-col gap-2 w-full overflow-y-scroll bg-scroll">
-        {data.map((item, index) => {
-          const isFirst = index === 0;
-          return (
-            <>
-              <div
+        <AnimatePresence>
+          {data.map((item, index) => {
+            const isFirst = index === 0;
+            return (
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0,  }}
+                transition={{
+                  duration: .4
+                }}                
+                exit={{ opacity: 0 }}
                 key={item.ID}
                 className="bg-text-white w-full p-4 items-center justify-items-start justify-self-center grid grid-cols-4 justify-between rounded-sm"
               >
@@ -46,10 +55,10 @@ export const JsonViewer = () => {
                 <h1 className="col-span-1 text-right justify-self-center text-sm font-light">
                   {item["Tempo estimado"]}
                 </h1>
-              </div>
-            </>
-          );
-        })}
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-"use client";
 //#region imports
+"use client";
 import { FileText } from "@/assets/icons";
 import { Button, Card } from "@/components";
 import { useFile } from "@/hooks/useFile";
@@ -13,8 +13,9 @@ export const ImportFile = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
       className="max-w-[334px]"
     >
       <Card>

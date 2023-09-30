@@ -8,10 +8,12 @@ import { FormProvider, useForm } from "react-hook-form";
 import { validationSchema } from "./schema";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { DownloadJson } from "../downloadJson";
 //#endregion
 
 export const CreateJobForte = () => {
-  const { data, handleAddFile } = useFile();
+  const { data, handleAddFile, handleExportJson, hasData } = useFile();
   const router = useRouter();
   const { FORM } = String;
 
@@ -25,9 +27,13 @@ export const CreateJobForte = () => {
   }, [data]);
 
   return (
-    <div className="flex flex-1 flex-col gap-4">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      className="flex flex-1 flex-col gap-4 items-center"
+    >
       <FormProvider {...methods}>
-        <form onSubmit={methods.handleSubmit(handleAddFile)}>
+        <form className="w-full" onSubmit={methods.handleSubmit(handleAddFile)}>
           <Input
             name="fileName"
             placeholder={FORM.FILE_NAME}
@@ -54,7 +60,7 @@ export const CreateJobForte = () => {
               label={FORM.DESCRIPTION}
             />
           </div>
-          <div className="flex flex-row gap-4 mt-6 max-w-lg items-center w-full">
+          <div className="flex flex-row gap-4 mt-9 max-w-lg items-center w-full">
             <Button label={FORM.ADD_JOB} variant="SECONDARY" type="submit" />
             <Button
               label={FORM.BACK}
@@ -65,6 +71,7 @@ export const CreateJobForte = () => {
           </div>
         </form>
       </FormProvider>
-    </div>
+      <DownloadJson handleExportJson={handleExportJson} isDisabled={hasData} />
+    </motion.div>
   );
 };
