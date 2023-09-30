@@ -31,7 +31,7 @@ export const UseFileProvider: React.FC<{ children: JSX.Element }> = (props) => {
   }, [ref]);
   const handleGetFiles = (event: ChangeEvent<HTMLInputElement>) => {
     const uploadedFile = event.target.files?.[0];
-    const name = event.target.files?.[0].name;
+    const name = event.target.files?.[0]?.name;
     const lastModified = event.target.files?.[0].lastModified;
 
     if (uploadedFile) {

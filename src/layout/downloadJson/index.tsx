@@ -9,7 +9,7 @@ export const DownloadJson: React.FC<DownloadJsonProps> = (props) => {
     <motion.div
       initial={{ y: 50 }}
       transition={{ delay: 0.9 }}
-      className={`bg-primary p-8 rounded-xl px-10 flex flex-row items-center justify-center cursor-pointer gap-8 hover:bg-[#57099E] mt-1 max-w-[350px] ${
+      className={`bg-primary p-8 rounded-xl px-10 flex flex-row items-center justify-center cursor-pointer gap-8 hover:bg-[#57099E] mb-11 -mt-6 max-w-[350px] ${
         !isDisabled && disabledStyled
       }`}
       onClick={handleExportJson}

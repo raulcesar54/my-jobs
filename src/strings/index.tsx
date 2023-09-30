@@ -4,7 +4,7 @@ export const String = {
   SUBTITLE: "bem vindo ao sistema de jobs",
   FILL_FIELDS: "preencha todos os campos",
   LESTS_CREATE_JOBS: "Vamos iniciar criando seus",
-  INSERT_JOB: "Castrar JOBS",
+  INSERT_JOB: "Cadastrar JOBS",
   CARD: {
     DESCRIPTION:
       "Escolha o arquivo clicando no botão abaixo, ou arraste e solte aqui.",

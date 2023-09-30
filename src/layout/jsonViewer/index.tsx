@@ -34,15 +34,14 @@ export const JsonViewer = () => {
             return (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0,  }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: .4
-                }}                
+                  duration: 0.4,
+                }}
                 exit={{ opacity: 0 }}
                 key={item.ID}
                 className="bg-text-white w-full p-4 items-center justify-items-start justify-self-center grid grid-cols-4 justify-between rounded-sm"
               >
-                {false && <h1 className="col-span-4">asdasd</h1>}
                 <h1 className="col-span-2 text-left font-semibold text-sm">
                   {item["Descrição"]}
                 </h1>

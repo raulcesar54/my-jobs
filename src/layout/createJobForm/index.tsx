@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 import { DownloadJson } from "../downloadJson";
 //#endregion
 
-export const CreateJobForte = () => {
+export const CreateJobForm = () => {
   const { data, handleAddFile, handleExportJson, hasData } = useFile();
   const router = useRouter();
   const { FORM } = String;
@@ -39,7 +39,7 @@ export const CreateJobForte = () => {
             placeholder={FORM.FILE_NAME}
             label={FORM.FILE_NAME}
           />
-          <div className="flex flex-row gap-4 mt-4">
+          <div className="flex flex-row gap-0 w-full md:gap-4 mt-4">
             <Input
               name="initialDate"
               placeholder={FORM.INITIAL_DATE}

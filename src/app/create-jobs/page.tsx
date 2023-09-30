@@ -2,7 +2,7 @@
 "use client";
 import logo from "@/assets/logo.svg";
 import { Button, Title } from "@/components";
-import { CreateJobForte, SideInformation } from "@/layout";
+import { CreateJobForm, SideInformation } from "@/layout";
 import { String } from "@/strings";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -14,8 +14,8 @@ export default function CreateJobs() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-1 h-full">
-      <main className="pt-[26px] px-[266px] flex flex-1 h-full w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom">
+    <div className="flex flex-1 h-full flex-col md:flex-row">
+      <main className="md:pt-[26px] md:px-[266px] px-4 pt-4 flex flex-1 h-full w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom pb-11">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -30,7 +30,7 @@ export default function CreateJobs() {
           title={LESTS_CREATE_JOBS}
           strongTitle={LOGO_TITLE}
         />
-        <CreateJobForte />
+        <CreateJobForm />
       </main>
       <SideInformation />
     </div>
