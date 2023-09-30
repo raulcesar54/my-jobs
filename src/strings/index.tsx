@@ -34,4 +34,5 @@ export const TESTS = {
   CARD: "card-test",
   ERROR: "error-test",
   ERROR_ICON: "error-icon-test",
+  TITLE: "title-test",
 };
