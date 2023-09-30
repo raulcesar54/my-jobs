@@ -5,5 +5,18 @@
 
 
 body {
+    height: 100vh;
+}
+::-webkit-scrollbar {
+   display: none;
+}
 
+::-webkit-scrollbar-track {
+    /* Customize the scrollbar track */
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+    /* Customize the scrollbar thumb */
 }
