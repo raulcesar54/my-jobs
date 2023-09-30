@@ -16,7 +16,7 @@ export const ImportFile = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="max-w-full md:max-w-[334px] "
+      className="max-w-full lg:max-w-[334px] "
     >
       <Card>
         <FileText />
@@ -26,7 +26,7 @@ export const ImportFile = () => {
         <small className="font text-text-white/60 text-sm">
           {CARD.MESSAGE}
         </small>
-        <div className="mt-[88px] md:mt-[48px] mb-2 w-full">
+        <div className="mt-[88px] lg:mt-[48px] mb-2 w-full">
           <Button
             label={CARD.IMPORT}
             variant="PRIMARY"

@@ -14,8 +14,8 @@ export default function CreateJobs() {
   const router = useRouter();
 
   return (
-    <div className="flex flex-1 h-full flex-col md:flex-row">
-      <main className="md:pt-[26px] md:px-[266px] px-4 pt-4 flex flex-1 h-full w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom pb-11">
+    <div className="flex flex-1 h-full flex-col lg:flex-row">
+      <main className="lg:pt-[26px] lg:px-[266px] px-4 pt-4 flex flex-1 h-full w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom pb-11">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

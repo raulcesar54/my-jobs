@@ -39,7 +39,7 @@ export const CreateJobForm = () => {
             placeholder={FORM.FILE_NAME}
             label={FORM.FILE_NAME}
           />
-          <div className="flex flex-row gap-0 w-full md:gap-4 mt-4">
+          <div className="flex flex-row gap-0 w-full lg:gap-4 mt-4">
             <Input
               name="initialDate"
               placeholder={FORM.INITIAL_DATE}

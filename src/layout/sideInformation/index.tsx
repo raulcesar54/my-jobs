@@ -17,8 +17,8 @@ export const SideInformation = () => {
         duration: 0.8,
       }}
       className={`py-[200px] ${
-        hasData && "py-3 mb:py-0"
-      } flex flex-1 bg-primary md:max-w-3xl md:p-8 md:pt-8 flex-col text-center items-center justify-center md:overflow-hidden md:mt-0`}
+        hasData && "py-3 lg:py-0"
+      } flex flex-1 bg-primary lg:max-w-3xl lg:p-8 lg:pt-8 flex-col text-center items-center justify-center lg:overflow-hidden lg:mt-0`}
     >
       {hasData ? <JsonViewer /> : <Information />}
     </motion.div>
