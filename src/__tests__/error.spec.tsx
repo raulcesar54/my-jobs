@@ -10,6 +10,12 @@ describe("Error", () => {
     const error = screen.getByTestId(TESTS.ERROR);
     expect(error).toBeInTheDocument();
   });
+  it("renders error label render correctly", () => {
+    render(<Error label="erro teste" />);
+
+    const error = screen.getByText("erro teste");
+    expect(error).toBeInTheDocument();
+  });
   it("renders error icon", () => {
     render(<Error label="erro teste" />);
 
