@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<p align="center">
+  <img src="https://github.com/raulcesar54/my-jobs/assets/50491912/376cb3f1-38f0-4e8d-906c-6428529fd8a5">
+</p>
+<div style="display: flex;gap:24px;">
+<p align="center">
+  <img width="450px"  style="border-radius:4px;overflow:hidden;" src="https://github.com/raulcesar54/my-jobs/assets/50491912/7ffff707-922a-44e2-88a7-db7d01b2aeb7">
+</p>
+<p align="center" style="border-radius:4px;overflow:hidden;">
+  <img width="114px" src="https://github.com/raulcesar54/my-jobs/assets/50491912/e0ac85bd-c7ac-4ba9-a1c1-96095ce010f8">
+</p>
+</div>
 
-First, run the development server:
+### 🎉 Figma | Design 
 
+https://www.figma.com/file/bgwI4peo9ntIE2Id1abD33/my-jobs?type=design&node-id=0-1&mode=design&t=RUHmuZihPw2BBgZJ-0
+
+
+### 🙌 Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando o Front end
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone este repositório
+$ git clone <git@github.com:raulcesar54/my-jobs.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd my-jobs
+
+# Instale as dependências
+$ yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
+
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
