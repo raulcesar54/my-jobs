@@ -31,4 +31,5 @@ export const String = {
 };
 export const TESTS = {
   BUTTON: "button-test",
+  CARD: "card-test"
 };
