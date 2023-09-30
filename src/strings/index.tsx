@@ -27,4 +27,5 @@ export const String = {
     ADD_JOB: "ADICIONAR JOBS",
     BACK: "VOLTAR",
   },
+  JSON_ERROR: "ops, essa tarefa está fora a data limite de conclusão",
 };

@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-1 h-full flex-col md:flex-row overflow-scroll ">
-      <main className="px-4 pt-4 md:pt-[26px] md:px-[266px] flex flex-1 h-full mb-11 w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom items-center md:items-start">
+      <main className="px-4 pt-4 md:pt-[26px] md:px-[266px] flex flex-1 h-full mb-11 md:mb-0 w-full flex-col gap-[48px] bg-[url('/img/background-white.png')] bg-no-repeat  bg-left-bottom items-center md:items-start">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

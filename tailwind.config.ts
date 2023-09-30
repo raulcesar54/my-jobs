@@ -9,7 +9,12 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      text: { main: "#555555", disabled: "#7D7D7D", white: "#FFFFFF" },
+      text: {
+        main: "#555555",
+        disabled: "#7D7D7D",
+        white: "#FFFFFF",
+        error: "#FF0404",
+      },
       primary: "#8200FA",
     },
   },
