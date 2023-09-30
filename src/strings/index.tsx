@@ -31,5 +31,7 @@ export const String = {
 };
 export const TESTS = {
   BUTTON: "button-test",
-  CARD: "card-test"
+  CARD: "card-test",
+  ERROR: "error-test",
+  ERROR_ICON: "error-icon-test",
 };
