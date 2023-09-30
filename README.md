@@ -4,7 +4,7 @@
 </p>
 <div style="display: flex;gap:24px;">
 <p align="center">
-  <img width="450px"  style="border-radius:4px;overflow:hidden;" src="https://github.com/raulcesar54/my-jobs/assets/50491912/7ffff707-922a-44e2-88a7-db7d01b2aeb7">
+  <img  style="border-radius:4px;overflow:hidden;" src="https://github.com/raulcesar54/my-jobs/assets/50491912/7ffff707-922a-44e2-88a7-db7d01b2aeb7">
 </p>
 <p align="center" style="border-radius:4px;overflow:hidden;">
   <img width="114px" src="https://github.com/raulcesar54/my-jobs/assets/50491912/e0ac85bd-c7ac-4ba9-a1c1-96095ce010f8">
